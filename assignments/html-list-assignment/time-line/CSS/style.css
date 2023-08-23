@@ -1,0 +1,27 @@
+body {
+    height: 100vh;
+    background-color: salmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    background-color: slateblue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.container h1 {
+    font-family: cursive;
+    background-color: rgb(179, 176, 176);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.container ol li {
+    font-size: 17px;
+    font-family: sans-serif;
+}
