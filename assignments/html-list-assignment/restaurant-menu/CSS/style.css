@@ -1,0 +1,29 @@
+body {
+    height: 100vh;
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    background-color: rgb(170, 114, 114);
+    padding: 40px 180px;
+    border-radius: 10px;
+}
+
+.container h1 {
+    background-color: rgb(222, 211, 202);
+    padding: 15px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.container ol {
+    border: 2px solid black;
+    padding: 20px 70px;
+    border-radius: 15px;
+    background-color: lightgreen;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
