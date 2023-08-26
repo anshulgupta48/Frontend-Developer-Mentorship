@@ -1,0 +1,39 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    height: 500px;
+    background-color: whitesmoke;
+    position: relative;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 25px 150px;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.container form {
+    position: absolute;
+}
+
+.container button {
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0px 10px;
+}
+
+#reset:hover {
+    background-color: red;
+}
+
+#submit:hover {
+    background-color: green;
+}
