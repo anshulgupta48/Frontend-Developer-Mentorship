@@ -1,0 +1,127 @@
+/* Container Section ( For Maximum Width 700px ) */
+.container h1 {
+    font-size: 25px;
+}
+
+.container h2 {
+    font-size: 20px;
+}
+
+.container p {
+    font-size: 18px;
+}
+
+
+/* Navigation Section ( For Maximum Width 700px ) */
+#left-nav {
+    margin: 15px;
+}
+
+#right-nav ul li a {
+    color: white;
+    padding: 15px 7px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* Intro Section ( For Maximum Width 700px ) */
+.right-intro {
+    min-height: 150px;
+    min-width: 150px;
+}
+
+
+/* Skills Section ( For Maximum Width 700px ) */
+#skills {
+    padding: 0px 15px;
+}
+
+.all_skills div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 49%;
+    padding: 20px 0px;
+    text-align: left;
+}
+
+
+/* Contact Section ( For Maximum Width 700px ) */
+#contact input {
+    width: 35vw;
+}
+
+.btn {
+    font-size: 16px;
+    margin: 5px;
+    padding: 10px;
+}
+
+
+/* Social-Media Section ( For Maximum Width 700px ) */
+#social-media a {
+    margin: 0px 5px;
+}
+
+
+/* CSS Properties For Maximum Width 400px */
+@media (max-width: 400px) {
+
+    /* Container Section (For Maximum Width 400px) */
+    .container p {
+        font-size: 16px;
+    }
+
+
+    /* Navbar Section (For Maximum Width 400px) */
+    #navbar {
+        flex-direction: column;
+        padding-bottom: 15px;
+    }
+
+    #right-nav ul li a {
+        color: white;
+        padding: 15px 5px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+
+    /* Intro Section (For Maximum Width 400px) */
+    #intro {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .right-intro {
+        min-height: 200px;
+        min-width: 200px;
+        margin-bottom: 25px;
+    }
+
+
+    /* Contact Section (For Maximum Width 400px) */
+    #contact input {
+        width: 45vw;
+        margin: 5px;
+    }
+
+
+    /* Social-Media Section (For Maximum Width 400px) */
+    #social-media p {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 16px;
+    }
+
+    #social-media a {
+        margin: 10px;
+    }
+
+
+    /* Footer Section (For Maximum Width 400px) */
+    #footer p {
+        font-size: 16px;
+    }
+}

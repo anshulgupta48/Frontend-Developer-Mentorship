@@ -1,0 +1,414 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+
+/* HTML Section */
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Navbar Section */
+#navbar {
+    position: fixed;
+    width: 100%;
+    color: white;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 8px lightgray;
+    z-index: 23;
+}
+
+#left-nav {
+    margin: 15px 60px;
+}
+
+#right-nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#right-nav {
+    margin: 0px 15px;
+}
+
+#right-nav ul li {
+    text-decoration: none;
+    list-style: none;
+}
+
+#right-nav ul li a {
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#right-nav ul li a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+
+
+/* Main Section */
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* Intro Section */
+#intro {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 110px;
+    padding: 20px;
+    width: 70vw;
+    box-shadow: 0px 2px 8px lightgray;
+}
+
+.left-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left-intro h1 {
+    margin: 15px 0px;
+    font-size: 40px;
+}
+
+.right-intro {
+    min-height: 300px;
+    min-width: 300px;
+    background-image: url(../Assets/logo.jpg);
+    background-size: 100% 100%;
+}
+
+#intro:hover {
+    border: 8px solid lightskyblue;
+    transform: scale3d(1.050, 1.050, 1.050);
+    transition-duration: 0.5s;
+    transition-delay: 0.1s;
+}
+
+
+/* About Section */
+#about {
+    margin-top: 50px;
+    padding: 20px;
+    width: 70vw;
+    box-shadow: 0px 2px 8px lightgray;
+}
+
+#about h1 {
+    display: inline;
+    margin-bottom: 30px;
+    float: left;
+    border-bottom: 4px solid skyblue;
+    font-weight: 200;
+}
+
+#about p {
+    text-align: left;
+    clear: left;
+}
+
+#about a {
+    color: black;
+    text-decoration: none;
+    float: left;
+    margin: 20px 0px;
+    padding: 10px;
+    box-shadow: 0px 4px 8px lightgray;
+    border-radius: 15px;
+    font-size: 18px;
+    color: white;
+    background-color: rgb(88, 72, 187);
+}
+
+#about a:hover {
+    background-color: darkblue;
+}
+
+#about:hover {
+    border: 8px solid lightskyblue;
+    transform: scale3d(1.050, 1.050, 1.050);
+    transition-duration: 0.5s;
+    transition-delay: 0.1s;
+}
+
+
+/* Education Section */
+#education {
+    margin-top: 50px;
+    padding: 20px;
+    width: 70vw;
+    box-shadow: 0px 2px 8px lightgray;
+}
+
+#education h1 {
+    display: inline;
+    margin-bottom: 30px;
+    float: left;
+    border-bottom: 4px solid skyblue;
+    font-weight: 200;
+}
+
+#education h2 {
+    margin: 10px;
+    padding-top: 20px;
+    text-align: left;
+    clear: left;
+}
+
+#education p {
+    margin: 20px;
+    text-align: left;
+    clear: left;
+}
+
+#education:hover {
+    border: 8px solid lightskyblue;
+    transform: scale3d(1.050, 1.050, 1.050);
+    transition-duration: 0.5s;
+    transition-delay: 0.1s;
+}
+
+
+/* Experiance Section */
+#experiance {
+    margin-top: 50px;
+    padding: 20px;
+    width: 70vw;
+    box-shadow: 0px 2px 8px lightgray;
+}
+
+#experiance h1 {
+    display: inline;
+    margin-bottom: 30px;
+    float: left;
+    border-bottom: 4px solid skyblue;
+    font-weight: 200;
+}
+
+#experiance ul li {
+    margin: 20px;
+    text-align: left;
+    clear: left;
+}
+
+#experiance:hover {
+    border: 8px solid lightskyblue;
+    transform: scale3d(1.050, 1.050, 1.050);
+    transition-duration: 0.5s;
+    transition-delay: 0.1s;
+}
+
+
+/* Skills Section */
+#skills {
+    margin-top: 50px;
+    width: 73vw;
+    box-shadow: 0px 2px 8px lightgray;
+}
+
+#skills h1 {
+    margin: 20px;
+    display: inline;
+    margin-bottom: 30px;
+    float: left;
+    border-bottom: 4px solid skyblue;
+    font-weight: 200;
+}
+
+.all_skills {
+    clear: left;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.all_skills div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    padding: 20px 0px;
+    text-align: left;
+}
+
+.all_skills img {
+    display: inline;
+    width: 15%;
+    padding: 0px 5px;
+}
+
+.skill-4 img {
+    width: 25%;
+}
+
+.skill-6 img {
+    width: 20%;
+}
+
+.skill-7 img {
+    width: 25%;
+}
+
+.all_skills div:hover {
+    background-color: lightgray;
+    border: 2px solid lightgray;
+}
+
+#skills:hover {
+    border: 8px solid lightskyblue;
+    transform: scale3d(1.050, 1.050, 1.050);
+    transition-duration: 0.5s;
+    transition-delay: 0.1s;
+}
+
+
+/* Contact Section */
+#contact {
+    margin-top: 50px;
+    width: 73vw;
+    box-shadow: 0px 2px 8px lightgray;
+}
+
+#contact h1 {
+    margin: 20px;
+    display: inline;
+    margin-bottom: 30px;
+    float: left;
+    border-bottom: 4px solid skyblue;
+    font-weight: 200;
+}
+
+#contact .contact-container {
+    display: flex;
+    justify-content: center;
+}
+
+#contact div {
+    margin: 20px;
+    text-align: left;
+    clear: left;
+    font-size: 16px;
+}
+
+#contact input {
+    width: 20vw;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0px 5px;
+    font-size: 16px;
+}
+
+#btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    margin: 15px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.btn:hover {
+    background-color: lightgray;
+}
+
+#contact:hover {
+    border: 8px solid lightskyblue;
+    transform: scale3d(1.050, 1.050, 1.050);
+    transition-duration: 0.5s;
+    transition-delay: 0.1s;
+    margin-bottom: 10px;
+}
+
+
+/* Social-Media Section */
+#social-media {
+    margin: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#social-media a {
+    color: white;
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.mail {
+    background-color: #dc3545;
+}
+
+.mail:hover {
+    background-color: #bb2d3b;
+}
+
+.github {
+    background-color: #0d6efd;
+}
+
+.github:hover {
+    background-color: #0b5ed7;
+}
+
+.linkedin {
+    background-color: #198754;
+}
+
+.linkedin:hover {
+    background-color: #157347;
+}
+
+
+/* Footer Section */
+#footer {
+    color: white;
+    background-color: rgb(34, 33, 33);
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+#footer p {
+    padding: 15px;
+}
+
+#footer a {
+    color: white;
+    text-decoration: none;
+    padding: 0px 10px;
+}
+
+#footer a:hover {
+    border-bottom: 2px solid lightskyblue;
+}
+
+
+/* CSS Properties For Maximum Width 800px */
+@media (max-width: 800px) {
+
+    /* Intro Section ( For Maximum Width 800px ) */
+    .right-intro {
+        min-height: 200px;
+        min-width: 200px;
+    }
+}
