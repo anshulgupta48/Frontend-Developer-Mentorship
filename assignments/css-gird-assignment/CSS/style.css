@@ -1,0 +1,114 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Container Section */
+.container {
+    height: 100vh;
+    margin: 0px 20px;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto auto;
+    gap: 20px;
+}
+
+.container div {
+    padding: 15px;
+    border: 3px solid tomato;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.header {
+    grid-column: 1 / span 12;
+}
+
+.sidebar {
+    grid-row: 2 / span 5;
+    grid-column: 1 / span 2;
+}
+
+.navigation {
+    grid-column: 3 / span 8;
+}
+
+.main {
+    grid-row: 3 / span 4;
+    grid-column: 3 / span 8;
+}
+
+.ads {
+    grid-row: 2 / span 5;
+    grid-column: 11 / span 2;
+}
+
+.footer {
+    grid-column: 1 / span 12;
+}
+
+
+/* CSS Properties For Maximum Width 720px */
+@media (max-width: 720px) {
+    .header {
+        grid-column: 1 / span 12;
+    }
+
+    .navigation {
+        grid-row: 2 / span 1;
+        grid-column: 1 / span 12;
+    }
+
+    .sidebar {
+        grid-row: 3 / span 5;
+        grid-column: 1 / span 2;
+    }
+
+    .main {
+        grid-row: 3 / span 5;
+        grid-column: 3 / span 10;
+    }
+
+    .ads {
+        grid-row: 8 / span 1;
+        grid-column: 1 / span 2;
+    }
+
+    .footer {
+        grid-row: 8 / span 1;
+        grid-column: 3 / span 10;
+    }
+}
+
+
+/* CSS Properties For Maximum Width 720px */
+@media (max-width: 400px) {
+    .header {
+        grid-column: 1 / span 12;
+    }
+
+    .navigation {
+        grid-row: 2 / span 1;
+        grid-column: 1 / span 12;
+    }
+
+    .main {
+        grid-row: 3 / span 5;
+        grid-column: 1 / span 12;
+    }
+
+    .sidebar {
+        grid-row: 8 / span 1;
+        grid-column: 1 / span 12;
+    }
+
+    .ads {
+        grid-row: 9 / span 1;
+        grid-column: 1 / span 12;
+    }
+
+    .footer {
+        grid-row: 10 / span 1;
+        grid-column: 1 / span 12;
+    }
+}
