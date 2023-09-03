@@ -1,0 +1,60 @@
+/* Input-Container Section ( For Maximum Width 500px ) */
+#input-container #title-input {
+    padding: 10px 0px
+}
+
+#input-container #notes-textarea {
+    padding: 10px 0px;
+}
+
+#input-container #addBtn {
+    margin: 0px;
+}
+
+
+/* Output-Container-1 Section ( For Maximum Width 500px ) */
+#output-container-1 {
+    justify-content: center;
+}
+
+#output-container-1 .output {
+    width: 90%;
+}
+
+.btn-group button {
+    margin: 4px;
+}
+
+
+/* Output-Container-2 Section ( For Maximum Width 500px ) */
+#output-container-2 {
+    justify-content: center;
+}
+
+#output-container-2 .output {
+    width: 90%;
+}
+
+.btn-group button {
+    margin: 4px;
+}
+
+
+/* Output-Container-3 Section ( For Maximum Width 500px ) */
+#output-container-3 {
+    justify-content: center;
+}
+
+#output-container-3 .output {
+    width: 90%;
+}
+
+.btn-group button {
+    margin: 4px;
+}
+
+
+/* Footer Section ( For Maximum Width 500px ) */
+#footer {
+    font-size: 17px;
+}

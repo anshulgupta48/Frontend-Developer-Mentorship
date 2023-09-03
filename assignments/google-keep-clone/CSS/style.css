@@ -1,0 +1,280 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Main-Container Section */
+#main-container {
+    min-height: 100vh;
+    max-width: 100vw;
+    background-color: #454545;
+}
+
+
+/* Intro-Container Section */
+#intro-container {
+    width: 100%;
+    padding: 25px 0px;
+    text-align: center;
+}
+
+#intro-container h1 {
+    display: inline-block;
+    width: 50%;
+    padding: 15px 30px;
+    background-color: lightgray;
+    border-radius: 50px;
+}
+
+
+/* Navigation-Container Section */
+#navigation-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#navigation-container .btn {
+    margin: 8px;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.active.btn {
+    color: black;
+    background-color: lightgreen;
+}
+
+.btn:hover {
+    filter: brightness(0.8);
+}
+
+.active.btn:hover {
+    filter: none;
+}
+
+
+/* Input-Container Section */
+#input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+#input-container #title-input {
+    padding: 10px 40px;
+    color: white;
+    background: transparent;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+
+#input-container #notes-textarea {
+    padding: 10px 40px;
+    color: white;
+    background-color: transparent;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+#input-container #addBtn {
+    display: inline-block;
+    width: 80px;
+    margin: 0px 40px;
+    padding: 10px 20px;
+    color: white;
+    background: tomato;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+}
+
+#addBtn:hover {
+    filter: brightness(0.8);
+}
+
+.active#input-container {
+    display: none;
+}
+
+
+/* Output-Container-1 Section */
+#output-container-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-bottom: 30px;
+}
+
+#output-container-1 .output {
+    width: 30%;
+    margin: 15px;
+}
+
+#output-container-1 .output h2 {
+    padding: 5px 0px;
+    color: black;
+    background-color: #FFA559;
+    text-align: center;
+}
+
+#output-container-1 .output p {
+    min-height: 100px;
+    padding: 25px 20px 10px 20px;
+    color: black;
+    background-color: #FFE6C7;
+    text-align: justify;
+}
+
+#output-container-1 .output .btn-group {
+    padding: 10px 20px 30px 20px;
+    background-color: #FFE6C7;
+}
+
+.btn-group button {
+    margin: 4px;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+.btn-group #archiveBtn:hover {
+    color: black;
+    background-color: lightgreen;
+}
+
+.btn-group #deleteBtn:hover {
+    color: white;
+    background-color: tomato;
+}
+
+.active#output-container-1 {
+    display: none;
+}
+
+
+/* Output-Container-2 Section */
+#output-container-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-bottom: 30px;
+}
+
+#output-container-2 .output {
+    width: 30%;
+    margin: 15px;
+}
+
+#output-container-2 .output h2 {
+    padding: 5px 0px;
+    color: black;
+    background-color: #FFA559;
+    text-align: center;
+}
+
+#output-container-2 .output p {
+    min-height: 100px;
+    padding: 25px 20px 10px 20px;
+    color: black;
+    background-color: #FFE6C7;
+    text-align: justify;
+}
+
+#output-container-2 .output .btn-group {
+    padding: 10px 20px 30px 20px;
+    background-color: #FFE6C7;
+}
+
+.btn-group button {
+    margin: 4px;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+.btn-group #archiveBtn:hover {
+    color: black;
+    background-color: lightgreen;
+}
+
+.btn-group #deleteBtn:hover {
+    color: white;
+    background-color: tomato;
+}
+
+.active#output-container-2 {
+    display: none;
+}
+
+
+/* Footer Section */
+#footer {
+    color: white;
+    background-color: rgb(34, 33, 33);
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.copy,
+.info {
+    padding: 15px;
+}
+
+
+/* CSS Properties For Maximum Width 900px */
+@media (max-width: 900px) {
+
+    /* Output-Container-1 Section ( For Maximum Width 900px ) */
+    #output-container-1 .output {
+        width: 46%;
+    }
+
+    /* Output-Container-2 Section ( For Maximum Width 900px ) */
+    #output-container-2 .output {
+        width: 46%;
+    }
+}
+
+
+/* CSS Properties For Maximum Width 750 */
+@media (max-width: 750px) {
+
+    /* Intro-Container Section ( For Maximum Width 750px ) */
+    #intro-container h1 {
+        width: 70%;
+    }
+
+
+    /* Output-Container-1 Section ( For Maximum Width 750px ) */
+    #output-container-1 .output {
+        width: 44%;
+    }
+
+    .btn-group button {
+        margin: 4px 1px;
+    }
+
+
+    /* Output-Container-2 Section ( For Maximum Width 750px ) */
+    #output-container-2 .output {
+        width: 44%;
+    }
+
+    .btn-group button {
+        margin: 4px 1px;
+    }
+
+    .btn-group button {
+        margin: 4px 1px;
+    }
+}
