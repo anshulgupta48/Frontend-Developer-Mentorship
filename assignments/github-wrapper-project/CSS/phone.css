@@ -1,0 +1,72 @@
+/* Github-Profile Section (For Maximum Width 500px) */
+#github-profile img {
+    margin: 10px;
+    display: inline-block;
+    width: 30%;
+}
+
+#github-profile h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.profile-info {
+    min-height: 350px;
+    width: 250px;
+    margin: 25px;
+    background-color: rgb(72 72 72);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Profile-Repos Section (For Maximum Width 500px) */
+.profile-repos {
+    min-height: 300px;
+    margin: 20px 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.repos-card {
+    position: relative;
+    min-height: 280px;
+    width: 85%;
+    margin: 15px;
+    color: white;
+    background-color: rgb(72 72 72);
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Footer Section (For Maximum Width 500px) */
+#footer {
+    font-size: 17px;
+}
+
+
+/* CSS Properties For Maximum Width 400px */
+@media (max-width: 400px) {
+
+    /* Github-Profile Section (For Maximum Width 400px) */
+    #github-profile img {
+        margin: 10px;
+        display: inline-block;
+        width: 30%;
+    }
+
+    #github-profile h1 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    #github-profile input {
+        width: 75%;
+    }
+}
