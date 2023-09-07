@@ -1,3 +1,4 @@
+/* Body Section */
 body {
     height: 100vh;
     background-color: skyblue;
@@ -7,6 +8,8 @@ body {
     overflow: hidden;
 }
 
+
+/* Container Section */
 .container {
     background-color: rgb(170, 114, 114);
     padding: 40px 180px;
