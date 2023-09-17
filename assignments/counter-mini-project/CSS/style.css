@@ -16,7 +16,7 @@
 }
 
 
-/* Digit Section */
+/* Digit-Container Section */
 #digit-container span {
     color: white;
     font-size: 80px;
@@ -25,7 +25,7 @@
 }
 
 
-/* Button Section */
+/* Button-Container Section */
 .btn {
     margin: 10px;
     padding: 10px 20px;
