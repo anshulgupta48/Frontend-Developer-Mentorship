@@ -192,6 +192,7 @@
         padding: 15px 25px;
     }
 
+
     /* Game-Container Section (For Maximum Width 400px) */
     #game-container {
         display: flex;
@@ -224,6 +225,7 @@
         border: 2px solid black;
     }
 }
+
 
 /* CSS Properties For Minimum Width 2500px */
 @media (min-width: 2500px) {

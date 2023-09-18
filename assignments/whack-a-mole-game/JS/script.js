@@ -1,3 +1,4 @@
+// <======== Initializing Variables in JS ========>
 const scoreSection = document.querySelector("#score");
 const gameSection = document.querySelector("#game-container");
 const startNewGameButton = document.querySelector("#startNewGame");
@@ -18,6 +19,7 @@ let timerId = null;
 let randomMoleId = null;
 
 
+// <======== JS Program to Start a New Game ========>
 startNewGameButton.addEventListener("click", () => {
     scoreSection.classList.remove("hide");
     gameSection.classList.remove("hide");
@@ -42,13 +44,10 @@ startNewGameButton.addEventListener("click", () => {
     score = 0;
     yourScoreH3.innerHTML = `Your Score: ${score}`;
 })
-
-
 pauseButton.addEventListener("click", pauseResumeGame);
 
 
-
-
+// <======== JS Function to Execute Remaining Time Functionality ========>
 function countDown() {
     timeLeft--;
     timeLeftH3.innerHTML = `Time Left: ${timeLeft}`;
@@ -65,8 +64,7 @@ function countDown() {
 }
 
 
-
-
+// <======== JS Function to Show Random Mole in Game ========>
 function randomMole() {
     squares.forEach(squares => {
         squares.classList.remove("mole");
@@ -78,8 +76,7 @@ function randomMole() {
 }
 
 
-
-
+// <======== JS Function to Pause & Resume the Game ========>
 function pauseResumeGame() {
     if (pauseButton.innerText == "Pause") {
         gameMusic.pause();
@@ -98,8 +95,7 @@ function pauseResumeGame() {
 }
 
 
-
-
+// <======== JS Function to Store High-Score of the Game ========>
 function storeHighScore() {
     let highScoreLibrary = localStorage.getItem("highScore");
     if (highScoreLibrary === null) {
@@ -117,8 +113,7 @@ function storeHighScore() {
 }
 
 
-
-
+// <======== JS Program to Increase the Score & to Play the Hit-Music ========>
 squares.forEach(squares => {
     squares.addEventListener("mousedown", () => {
         if (timerId !== null) {
