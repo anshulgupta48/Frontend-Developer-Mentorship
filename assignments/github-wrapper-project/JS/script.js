@@ -1,8 +1,11 @@
+// <======== Initializing Variables in JS ========>
 const usernameInput = document.querySelector("#github-profile input");
 const showDetailsBtn = document.querySelector(".btn");
 const profileInfoDiv = document.querySelector(".profile-info");
 const profileReposDiv = document.querySelector(".profile-repos");
 
+
+// <======== JS Program to Fetch the Details of Github-Profile ========>
 showDetailsBtn.addEventListener("click", async () => {
     profileInfoDiv.classList.add("hide");
     profileReposDiv.classList.add("hide");
@@ -30,6 +33,7 @@ showDetailsBtn.addEventListener("click", async () => {
 })
 
 
+// <======== JS Program to Show the Info of Github-Profile ========>
 function showProfileInfo(data) {
     profileInfoDiv.innerHTML = `<div class="info-card">
     <img src="${data.avatar_url}" alt=${data.name}>
@@ -44,6 +48,7 @@ function showProfileInfo(data) {
 }
 
 
+// <======== JS Program to Show the Repos of Github-Profile ========>
 async function showProfileRepos(username) {
     const res = await fetch(`https://api.github.com/users/${username}/repos`)
     const projects = await res.json();
