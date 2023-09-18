@@ -1,3 +1,4 @@
+// <======== Initializing Variables in JS ========>
 const title = document.querySelector("#title-input");
 const notes = document.querySelector("#notes-textarea");
 const addBtn = document.querySelector("#addBtn");
@@ -9,14 +10,12 @@ const archiveContainer = document.querySelector("#output-container-2");
 
 showTask();
 showArchive();
-
 addBtn.addEventListener("click", addTask);
 
 
 
 
 // <======== Complete-Task Section ========>
-
 function addTask() {
     if (notes.value == "") {
         alert("Please Enter the Value in Notes Section");
@@ -102,7 +101,6 @@ function showTask() {
 
 
 // <======== Complete Archive Section ========>
-
 function archiveTask(index) {
     let archiveHTML = "";
     let library = localStorage.getItem("library");
@@ -231,7 +229,6 @@ function unarchiveTask(index) {
 
 
 // <======== Complete-Navigation Section ========>
-
 const NotesSection = document.querySelector("#notes-btn");
 const archiveSection = document.querySelector("#archive-btn");
 
